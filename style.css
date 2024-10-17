@@ -1,0 +1,70 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 80px;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+#islas{
+    scale: 0.7;
+    margin: 0 auto;
+    translate: 5%;
+    position: relative;
+}
+
+#flores{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cajaflora{
+ width: 200px;
+ background-size: cover;
+}
+
+
+.cajaflora img{
+    width: 150px;
+    
+}
+
+.ficha-izq {
+    display: flex;
+}
+
+.ficha-der {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.titulo {
+    display: flex;
+}
+
+.iluPeq {
+    width:80px
+}
+
+.foto {
+    width: 50%;
+    height: 100vh;
+    background-color: blueviolet;
+}
+#islas path{
+    fill:aquamarine;
+}
+
+
+footer{
+    background-image: url("./assets/paisaje.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    color: white;
+    background-position: bottom;
+}
