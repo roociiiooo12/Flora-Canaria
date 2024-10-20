@@ -267,3 +267,32 @@ let botonEnvio = document.createElement("button");
 botonEnvio.type = "submit";
 botonEnvio.innerText = "Enviar";
 modal.appendChild(botonEnvio);
+
+
+// Obtener el botón
+
+let scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+
+// Mostrar el botón cuando se hace scroll
+
+let scrollBtn = window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+};
+
+
+// Añadir el evento al botón
+
+scrollToTopBtn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+};
+
+
+
