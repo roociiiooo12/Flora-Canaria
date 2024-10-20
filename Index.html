@@ -7,18 +7,22 @@
     <title>Verdealisio</title>
     <link rel="stylesheet" href="./style.css">
     <script src="index.js" defer></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
 </head>
 
 
 <body>
     <header>
-        <h1>VerdeAlisio</h1>
-        <nav>
-            <div>contacto</div>
-            <div>
+        <div id="containerNav">
+            <h1>verdealisio</h1>
+            <nav>
+                <div id="contact">contacto</div>
+
                 <button id="donar">Dona</button>
-            </div>
-        </nav>
+
+            </nav>
+        </div>
     </header>
 
     <section id="islas">
@@ -40,23 +44,39 @@
         </svg>
     </section>
     <section id="flores">
-        <div class="cajaflora" id="tajinaste"><img
-                src="https://www3.gobiernodecanarias.org/medusa/wiki/images/4/42/Tajinaste-azul.png"></div>
+        <div class="cajaflora" id="tajinaste">
+            <img src="https://www3.gobiernodecanarias.org/medusa/wiki/images/4/42/Tajinaste-azul.png">
+            <p>tajinaste azul</p>
+        </div>
+
         <div class="cajaflora" id="violeta"><img
-                src="https://www3.gobiernodecanarias.org/medusa/wiki/images/b/b5/Violeta-del-Teide.png"></div>
+                src="https://www3.gobiernodecanarias.org/medusa/wiki/images/b/b5/Violeta-del-Teide.png">
+            <p>violeta del teide</p>
+        </div>
         <div class="cajaflora" id="helecho"><img
                 src="https://www3.gobiernodecanarias.org/medusa/wiki/images/2/2e/Helecho-cochinilla-o-batatilla.png">
+            <p>helecho</p>
         </div>
         <div class="cajaflora" id="tilo"><img
                 src="https://www3.gobiernodecanarias.org/medusa/wiki/images/f/f1/Tilo.png">
+            <p>tilo</p>
         </div>
         <div class="cajaflora" id="cardon"><img
                 src="https://www3.gobiernodecanarias.org/medusa/wiki/images/9/9f/Cardon.png">
+            <p>cardón</p>
         </div>
         <div class="cajaflora" id="drago"><img
                 src="https://www3.gobiernodecanarias.org/medusa/wiki/images/b/b2/Drago1.png">
+            <p>drago</p>
         </div>
     </section>
+
+
+    <button id="topButton">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path fill = "#FFFBF0" d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+        </svg>
+    </button>
 
 
     <section class="ficha-izq" id="fichaTajinaste">
@@ -68,29 +88,24 @@
         </div>
 
         <div class="contenido">
-            <div class="titulo">
-                <h2>Tajinaste azul</h2>
-                <img class="iluPeq" src="https://www3.gobiernodecanarias.org/medusa/wiki/images/4/42/Tajinaste-azul.png"
-                    alt="">
-            </div>
-            <div class="parrafo">
-                <p>Nombre científico: Dracaena Draco</p>
-                <p>
-                    Localización altitud: suele medir entre los 15 y los 20 metros.
-                </p>
-
-                <p>Islas: Solo se encuentra en Tenerife y en Gran Canaria.</p>
-
-                <p>Floración época: Crece a principios de verano</p>
-
-                <p>Curiosidad: Segun una leyendra esta relacionado con el Dragon Encarnado y es el mayor arbol longevo
-                    que puede llegar a vivir hasta 100 años </p>
-
-
+            <div class="contenidoDentro">
+                <div class="titulo">
+                    <h2>Tajinaste azul</h2>
+                    <img class="iluPeq"
+                        src="https://www3.gobiernodecanarias.org/medusa/wiki/images/4/42/Tajinaste-azul.png" alt="">
+                </div>
+                <div class="parrafo">
+                    <p>Nombre científico: Echium callithyrsum</p>
+                    <p>Localización altitud: 700 - 1500m, en el Norte/Noroeste de Gran Canaria</p>
+                    <p>Islas: Gran Canaria.</p>
+                    <p>Época de floración: Invierno</p>
+                    <p>Curiosidad: Puede alcanzar hasta 4m de altura</p>
+                </div>
             </div>
         </div>
 
     </section>
+
 
 
     <section class="ficha-der" id="fichaVioleta">
@@ -103,23 +118,19 @@
         </div>
 
         <div class="contenido">
-            <div class="titulo">
-                <h2>Violeta del Teide</h2>
-                <img class="iluPeq"
-                    src="https://www3.gobiernodecanarias.org/medusa/wiki/images/b/b5/Violeta-del-Teide.png" alt="">
-            </div>
-            <div class="parrafo">
-                <p>Nombre científico: Viola cheiranthifolia</p>
-                <p>Localización altitud: Pico del Teide</p>
-
-                <p>Islas: Tenerife</p>
-
-                <p>Floración época: Primavera - Invierno</p>
-                <p>Curiosidad: Flor que crece a mayor altitud de España </p>
-
-                
-
-                
+            <div class="contenidoDentro">
+                <div class="titulo">
+                    <h2>Violeta del Teide</h2>
+                    <img class="iluPeq"
+                        src="https://www3.gobiernodecanarias.org/medusa/wiki/images/b/b5/Violeta-del-Teide.png" alt="">
+                </div>
+                <div class="parrafo">
+                    <p>Nombre científico: Viola cheiranthifolia</p>
+                    <p>Localización altitud: Pico del Teide</p>
+                    <p>Islas: Tenerife</p>
+                    <p>Época de floración: Primavera - Invierno</p>
+                    <p>Curiosidad: Flor que crece a mayor altitud de España </p>
+                </div>
             </div>
         </div>
 
@@ -128,26 +139,28 @@
 
     <section class="ficha-izq" id="fichaHelecho">
 
-        <div class="foto">
+        <div class="foto1">
+            <video playsinline autoplay muted loop>
+                <source
+                    src="https://static.vecteezy.com/system/resources/previews/002/019/130/mp4/close-up-lush-fern-foliage-free-video.mp4">
+            </video>
         </div>
 
         <div class="contenido">
-            <div class="titulo">
-                <h2>Helecho</h2>
-                <img class="iluPeq"
-                    src="https://www3.gobiernodecanarias.org/medusa/wiki/images/2/2e/Helecho-cochinilla-o-batatilla.png"
-                    alt="">
-            </div>
-            <div class="parrafo">
-                <p>Nombre científico: Davallia canariensis
-
-                    Localización altitud: 300-2000m altitud en bosques de laurisilva
-
-                    Islas: TODAS
-
-                    Floración época: Invierno
-
-                    Curiosidad: Una de las especies vegetales más antiguas de la tierra.</p>
+            <div class="contenidoDentro">
+                <div class="titulo">
+                    <h2>Helecho</h2>
+                    <img class="iluPeq"
+                        src="https://www3.gobiernodecanarias.org/medusa/wiki/images/2/2e/Helecho-cochinilla-o-batatilla.png"
+                        alt="">
+                </div>
+                <div class="parrafo">
+                    <p>Nombre científico: Davallia canariensis</p>
+                    <p>Localización altitud: 300 - 2000m, en bosques de laurisilva</p>
+                    <p>Islas: Todas las Islas Canarias</p>
+                    <p>Época de floración: Invierno</p>
+                    <p>Curiosidad: Una de las especies vegetales más antiguas de la tierra</p>
+                </div>
             </div>
         </div>
 
@@ -156,25 +169,28 @@
 
     <section class="ficha-der" id="fichaTilo">
 
-        <div class="foto">
+        <div class="foto2">
+            <video playsinline autoplay muted loop>
+                <source
+                    src="https://static.vecteezy.com/system/resources/previews/011/140/413/mp4/jungle-trees-sun-beams-through-spring-forest-free-video.mp4">
+            </video>
         </div>
 
         <div class="contenido">
-            <div class="titulo">
-                <h2>Tilo</h2>
-                <img class="iluPeq" src="https://www3.gobiernodecanarias.org/medusa/wiki/images/f/f1/Tilo.png" alt="">
-            </div>
-            <div class="parrafo">
-                <p>Nombre científico: Ocotea foetens
-
-                    Localización altitud: Puede llegar a superar los 20metros de altura
-
-                    Islas: Estan en todas las islas menos en Lanzarote y en fuerteventura.
-
-                    Floración época: A mediados o a fines de primavera
-
-                    Curiosidad: La madera del tilo es blanda y se usa para tallas, mientras que con la fibra se fabrican
-                    cuerdas</p>
+            <div class="contenidoDentro">
+                <div class="titulo">
+                    <h2>Tilo</h2>
+                    <img class="iluPeq" src="https://www3.gobiernodecanarias.org/medusa/wiki/images/f/f1/Tilo.png"
+                        alt="">
+                </div>
+                <div class="parrafo">
+                    <p>Nombre científico: Ocotea foetens</p>
+                    <p>Localización altitud: 600 - 900m</p>
+                    <p>Islas: La Palma, La Gomera, El Hierro, Tenerife y Gran Canaria</p>
+                    <p>Época de floración: Mediados/finales de primavera</p>
+                    <p>Curiosidad: La madera del tilo es blanda y se usa para tallas, mientras que con la fibra se
+                        fabrican cuerdas</p>
+                </div>
             </div>
         </div>
 
@@ -183,24 +199,27 @@
 
     <section class="ficha-izq" id="fichaCardon">
 
-        <div class="foto">
+        <div class="foto1">
+            <video playsinline autoplay muted loop>
+                <source
+                    src="https://static.vecteezy.com/system/resources/previews/042/355/310/mp4/tropical-cacti-cactus-plants-natural-jungle-puerto-escondido-mexico-free-video.mp4">
+            </video>
         </div>
 
         <div class="contenido">
-            <div class="titulo">
-                <h2>Cardón</h2>
-                <img class="iluPeq" src="https://www3.gobiernodecanarias.org/medusa/wiki/images/9/9f/Cardon.png" alt="">
-            </div>
-            <div class="parrafo">
-                <p>Nombre científico: Euphorbia canariensis
-
-                    Localización altitud: 100-900m altitud, en el cardonal-tabaibal
-
-                    Islas: La Palma, El Hierro, La Gomera, Tenerife, Gran Canaria, Fuerteventura
-
-                    Floración época: Primavera
-
-                    Curiosidad: Sirve para los dolores de muelas (no es comestible). Ecosistema desértico</p>
+            <div class="contenidoDentro">
+                <div class="titulo">
+                    <h2>Cardón</h2>
+                    <img class="iluPeq" src="https://www3.gobiernodecanarias.org/medusa/wiki/images/9/9f/Cardon.png"
+                        alt="">
+                </div>
+                <div class="parrafo">
+                    <p>Nombre científico: Euphorbia canariensis</p>
+                    <p>Localización altitud: 100 - 900m, en el cardonal-tabaibal</p>
+                    <p>Islas: La Palma, El Hierro, La Gomera, Tenerife, Gran Canaria, Fuerteventura</p>
+                    <p>FÉpoca de floración: Primavera</p>
+                    <p>Curiosidad: Sirve para los dolores de muelas (no es comestible). Ecosistema desértico</p>
+                </div>
             </div>
         </div>
 
@@ -209,26 +228,28 @@
 
     <section class="ficha-der" id="fichaDrago">
 
-        <div class="foto">
+        <div class="foto2">
+            <video playsinline autoplay muted loop>
+                <source
+                    src="https://static.vecteezy.com/system/resources/previews/011/756/165/mp4/view-of-pandanus-tectorius-palm-trees-against-sky-near-beach-on-the-tropical-island-pandanus-tectorius-palm-trees-bottom-view-free-video.mp4">
+            </video>
         </div>
 
         <div class="contenido">
-            <div class="titulo">
-                <h2>Drago</h2>
-                <img class="iluPeq" src="https://www3.gobiernodecanarias.org/medusa/wiki/images/b/b2/Drago1.png" alt="">
-            </div>
-            <div class="parrafo">
-                <p>Nombre científico: Dracaena Draco
-
-                    Localización altitud: suele medir entre los 15 y los 20 metros.
-
-                    Islas: Solo se encuentra en Tenerife y en Gran Canaria.
-
-                    Floración época: Crece a principios de verano
-
-                    Curiosidad: Segun una leyendra esta relacionado con el Dragon Encarnado y es el mayor arbol longevo
-                    que puede llegar a
-                    vivir hasta 100 años</p>
+            <div class="contenidoDentro">
+                <div class="titulo">
+                    <h2>Drago</h2>
+                    <img class="iluPeq" src="https://www3.gobiernodecanarias.org/medusa/wiki/images/b/b2/Drago1.png"
+                        alt="">
+                </div>
+                <div class="parrafo">
+                    <p>Nombre científico: Dracaena Draco</p>
+                    <p>Localización altitud: 200 - 400m, en el bosque termófilo</p>
+                    <p>Islas: Solo se encuentra en Tenerife y en Gran Canaria</p>
+                    <p>Época de floración: Verano</p>
+                    <p>Curiosidad: Segun una leyenda esta relacionado con el Dragon Encarnado y es el mayor arbol
+                        longevo que puede llegar a vivir hasta 100 años</p>
+                </div>
             </div>
         </div>
 
@@ -245,10 +266,9 @@
 </section> -->
 
     <footer>
-
-        <div class="textoFinal">
-            <p>Telefono : 9287700012 </p>
-            <p>Correo electronico: verdealicio@gmail.com</p>
+        <div id="textoFinal">
+            <p>teléfono: 9287700012 </p>
+            <p>email: hola@verdealisio.com</p>
         </div>
     </footer>
 

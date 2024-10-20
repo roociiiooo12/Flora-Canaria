@@ -16,94 +16,88 @@ let tilo = document.getElementById("tilo");
 let helecho = document.getElementById("helecho");
 
 tajinaste.addEventListener("mouseenter", () => {
-    granCanaria.style.fill = "#FF0000";
+    granCanaria.classList.add("hoverin");
 })
 tajinaste.addEventListener("mouseleave", () => {
-    granCanaria.style.fill = "";
+    granCanaria.classList.remove("hoverin");
 })
-
 
 
 violeta.addEventListener("mouseenter", () => {
-    tenerife.style.fill = "#FF0000";
+    tenerife.classList.add("hoverin");
 })
 violeta.addEventListener("mouseleave", () => {
-    tenerife.style.fill = "";
+    tenerife.classList.remove("hoverin");
 })
-
 
 helecho.addEventListener("mouseenter", () => {
-    granCanaria.style.fill = "#FF0000";
-    tenerife.style.fill = "#FF0000";
-    fuerteventura.style.fill = "#FF0000";
-    lanzarote.style.fill = "#FF0000";
-    gomera.style.fill = "#FF0000";
-    hierro.style.fill = "#FF0000";
-    palma.style.fill = "#FF0000";
-
+    granCanaria.classList.add("hoverin");
+    tenerife.classList.add("hoverin");
+    gomera.classList.add("hoverin");
+    hierro.classList.add("hoverin");
+    palma.classList.add("hoverin");
+    fuerteventura.classList.add("hoverin");
+    lanzarote.classList.add("hoverin");
+    
 })
 helecho.addEventListener("mouseleave", () => {
-    granCanaria.style.fill = "";
-    tenerife.style.fill = "";
-    fuerteventura.style.fill = "";
-    lanzarote.style.fill = "";
-    gomera.style.fill = "";
-    hierro.style.fill = "";
-    palma.style.fill = "";
+    granCanaria.classList.remove("hoverin");
+    tenerife.classList.remove("hoverin");
+    gomera.classList.remove("hoverin");
+    hierro.classList.remove("hoverin");
+    palma.classList.remove("hoverin");
+    fuerteventura.classList.remove("hoverin");
+    lanzarote.classList.remove("hoverin");
 })
-
-
 
 tilo.addEventListener("mouseenter", () => {
-    granCanaria.style.fill = "#FF0000";
-    tenerife.style.fill = "#FF0000";
-    gomera.style.fill = "#FF0000";
-    hierro.style.fill = "#FF0000";
-    palma.style.fill = "#FF0000";
+granCanaria.classList.add("hoverin");
+    tenerife.classList.add("hoverin");
+    gomera.classList.add("hoverin");
+    hierro.classList.add("hoverin");
+    palma.classList.add("hoverin");
 })
 tilo.addEventListener("mouseleave", () => {
-    granCanaria.style.fill = "";
-    tenerife.style.fill = "";
-    gomera.style.fill = "";
-    hierro.style.fill = "";
-    palma.style.fill = "";
+    granCanaria.classList.remove("hoverin");
+    tenerife.classList.remove("hoverin");
+    gomera.classList.remove("hoverin");
+    hierro.classList.remove("hoverin");
+    palma.classList.remove("hoverin");
 })
 
-
-
 cardon.addEventListener("mouseenter", () => {
-    granCanaria.style.fill = "#FF0000";
-    tenerife.style.fill = "#FF0000";
-    fuerteventura.style.fill = "#FF0000";
-    gomera.style.fill = "#FF0000";
-    hierro.style.fill = "#FF0000";
-    palma.style.fill = "#FF0000";
+    granCanaria.classList.add("hoverin");
+    tenerife.classList.add("hoverin");
+    gomera.classList.add("hoverin");
+    hierro.classList.add("hoverin");
+    palma.classList.add("hoverin");
+    fuerteventura.classList.add("hoverin");
 
 })
 cardon.addEventListener("mouseleave", () => {
-    granCanaria.style.fill = "";
-    tenerife.style.fill = "";
-    fuerteventura.style.fill = "";
-    gomera.style.fill = "";
-    hierro.style.fill = "";
-    palma.style.fill = "";
+    granCanaria.classList.remove("hoverin");
+    tenerife.classList.remove("hoverin");
+    gomera.classList.remove("hoverin");
+    hierro.classList.remove("hoverin");
+    palma.classList.remove("hoverin");
+    fuerteventura.classList.remove("hoverin");
 })
 
 
 drago.addEventListener("mouseenter", () => {
-    granCanaria.style.fill = "#FF0000";
-    tenerife.style.fill = "#FF0000";
-    gomera.style.fill = "#FF0000";
-    hierro.style.fill = "#FF0000";
-    palma.style.fill = "#FF0000";
+    granCanaria.classList.add("hoverin");
+    tenerife.classList.add("hoverin");
+    gomera.classList.add("hoverin");
+    hierro.classList.add("hoverin");
+    palma.classList.add("hoverin");
 
 })
 drago.addEventListener("mouseleave", () => {
-    granCanaria.style.fill = "";
-    tenerife.style.fill = "";
-    gomera.style.fill = "";
-    hierro.style.fill = "";
-    palma.style.fill = "";
+    granCanaria.classList.remove("hoverin");
+    tenerife.classList.remove("hoverin");
+    gomera.classList.remove("hoverin");
+    hierro.classList.remove("hoverin");
+    palma.classList.remove("hoverin");
 })
 
 
@@ -143,37 +137,67 @@ Array.from(btn).forEach((img) => {
 let buttonDonar = document.getElementById("donar");
 
 buttonDonar.onclick = function () {
-    modal.style.display = "block";
+    modalBack.style.display = "block";
 }
+
+// boton Volver Arriba
+
+let buttonTop = document.getElementById("topButton");
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        buttonTop.style.display = "block";
+    } else {
+        buttonTop.style.display = "none";
+    }
+}
+
+buttonTop.addEventListener("click" , topFunction)
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+// Modal Back
+
+let modalBack = document.createElement('div');
+modalBack.setAttribute('id', 'miModalBack');
+modalBack.style.display = "none";
+
+let body = document.getElementsByTagName("body")[0];
+body.appendChild(modalBack);
 
 
 // Modal 
 
 let modal = document.createElement('div');
 modal.setAttribute('id', 'miModal');
-modal.style.display="none"
 
-let body = document.getElementsByTagName("body")[0];
-body.appendChild(modal);
+modalBack.appendChild(modal);
+
+
 
 // Modal Btn Cerrar
 
 let cerrar = document.createElement('span');
 cerrar.setAttribute('id', 'modalCerrar');
-cerrar.innerText = "x";
+cerrar.innerHTML = '<span class="material-symbols-outlined">close</span>';
+
 modal.appendChild(cerrar);
 
 cerrar.addEventListener('click', cerrarModal);
 
 function cerrarModal() {
-    modal.style.display = "none"
+    modalBack.style.display = "none"
 }
 
 // Modal Texto
 
 let titulo = document.createElement('h2');
 titulo.setAttribute('id', 'modalTitulo');
-titulo.innerText = "Dona";
+titulo.innerText = "DONA";
 modal.appendChild(titulo);
 
 let parrafo = document.createElement('p');
@@ -247,8 +271,8 @@ cajaForm.appendChild(inputCantidad);
 
 //Check términos
 
-let labelCheck = document.createElement('label');
-labelCheck.setAttribute('id', 'modalLabelCheck');
+let labelCheck = document.createElement('div');
+labelCheck.setAttribute('id', 'modalDivCheck');
 cajaForm.appendChild(labelCheck);
 
 let inputCheck = document.createElement('input');
@@ -256,7 +280,9 @@ inputCheck.setAttribute('id', 'modalinputCheck');
 inputCheck.setAttribute('type', 'checkbox');
 labelCheck.appendChild(inputCheck);
 
-let inputCheckText = document.createElement('p');
+let inputCheckText = document.createElement('label');
+inputCheckText.setAttribute('id', 'modalLabelCheck');
+inputCheckText.setAttribute('for', 'modalinputCheck')
 inputCheckText.innerText = "Acepto los términos y condiciones"
 labelCheck.appendChild(inputCheckText);
 
