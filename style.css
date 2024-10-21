@@ -149,15 +149,9 @@ nav {
     object-fit: contain;
 }
 
-.cajaflora:hover {
-    opacity: 1;
-    transform: scale(1.1);
-}
 
-
-.cajaflora:hover~.cajaflora,
-.cajaflora:hover~.cajaflora {
-    opacity: 0.5;
+#flores:hover .cajaflora:not(:hover)  {
+    opacity: 0.6;
 }
 
 #topButton {
