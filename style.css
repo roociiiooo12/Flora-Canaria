@@ -475,7 +475,7 @@ video {
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
-    height: 70vh;
+    height: 75vh;
 }
 
 .textQuienes {
@@ -513,7 +513,7 @@ video {
 }
 
 footer {
-    height: 400px;
+    height: 25vh;
     background-image:
         linear-gradient(120deg, #808F12, transparent, #EA2A15),
         linear-gradient(to top, #2A5C0B,#3b7e12, #f3a67a);
@@ -528,18 +528,24 @@ footer {
     justify-content: space-around;
 }
 
-#accesibilidad {
+#accesibilidad div {
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
 }
+#accesibilidad{
+    display: flex;
+    justify-content: center;
+    gap: 160px
 
-
+}
 
 #redesSociales {
     display: flex;
     justify-content: space-around;
-   padding: 60px;
+   padding-top: 60px;
 }
 
 .img {
