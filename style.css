@@ -217,7 +217,7 @@ h3 {
 
 .contenido {
     font-family: "Everett-regular";
-    font-size: 21pt;
+    font-size: 18pt;
     color: #2A5C0B;
     width: 50%;
 }
@@ -245,7 +245,6 @@ h5 {
     font-size: 32pt;
     color: #EA2A15;
     margin-right: 20px;
- 
     z-index: 1;
 
 }
