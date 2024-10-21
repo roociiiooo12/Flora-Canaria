@@ -96,12 +96,12 @@ nav {
 
 h3 {
     font-family: "Everett-regular";
-        font-size: 21pt;
-        color: #2A5C0B;
-        font-weight: 200;
-        width:90%;
-        margin: 0 auto;
-        text-align: center;
+    font-size: 21pt;
+    color: #2A5C0B;
+    font-weight: 200;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #islas {
@@ -161,7 +161,7 @@ h3 {
 }
 
 
-#flores:hover .cajaflora:not(:hover)  {
+#flores:hover .cajaflora:not(:hover) {
     opacity: 0.6;
 }
 
@@ -193,11 +193,11 @@ h3 {
 
 .lineaDecorder {
     position: absolute;
-    width:1800px;
-    translate: 0 90px;
+    width: 1800px;
+    translate: 0 80px;
     left: 20px;
-    background-color: #808F12;
-    height: 60px;
+    background-color: #FAEDD9;
+    height: 80px;
     opacity: 1;
     border-radius: 50px;
 }
@@ -205,13 +205,15 @@ h3 {
 .lineaDecorizq {
     position: absolute;
     width: 1800px;
-    translate: 0 90px;
+    translate: 0 80px;
     right: 20px;
-    background-color: #808F12;
-    height: 60px;
+    background-color: #FAEDD9;
+    height: 80px;
     opacity: 1;
     border-radius: 50px;
 }
+
+
 
 .contenido {
     font-family: "Everett-regular";
@@ -234,15 +236,16 @@ h5 {
     display: flex;
     align-content: center;
     padding-top: 60px;
-    
+
 }
 
 .titulo h2 {
     font-family: "Averia Serif Libre", serif;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 32pt;
-    color: #FAEDD9;
+    color: #EA2A15;
     margin-right: 20px;
+ 
     z-index: 1;
 
 }
