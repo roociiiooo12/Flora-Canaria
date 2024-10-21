@@ -57,12 +57,13 @@ nav {
     display: flex;
     gap: 40px;
     justify-items: center;
+    font-size: 18pt;
 }
 
 #contact {
     font-family: "Everett-regular";
     text-transform: uppercase;
-    line-height: 2.5;
+    line-height: 1.6;
     color: #FAEDD9;
     cursor: pointer;
 }
@@ -75,8 +76,9 @@ nav {
 
 #donar {
     font-family: "Everett-regular";
+    font-size: 18pt;
     text-transform: uppercase;
-    width: 95px;
+    width: 120px;
     height: 38px;
     border: none;
     border-radius: 44px;
@@ -123,7 +125,7 @@ nav {
     width: 150px;
     background-size: cover;
     display: flex;
-  
+
     justify-content: center;
 
     background-color: white;
@@ -145,7 +147,7 @@ nav {
 .cajaflora img {
     width: 80px;
     object-fit: contain;
-}  
+}
 
 .cajaflora:hover {
     opacity: 1;
@@ -153,8 +155,8 @@ nav {
 }
 
 
-.cajaflora:hover ~ .cajaflora, 
-.cajaflora:hover ~ .cajaflora {
+.cajaflora:hover~.cajaflora,
+.cajaflora:hover~.cajaflora {
     opacity: 0.5;
 }
 
@@ -177,7 +179,7 @@ nav {
 
 .ficha-izq {
     display: flex;
-    
+
 }
 
 .ficha-der {
@@ -229,24 +231,7 @@ nav {
 
 
 
-footer {
-    /* 
-    background-image: url("./assets/paisaje.png");
-    background-repeat: no-repeat;
-    background-position: bottom; 
-   */
-    height: 200px;
-    color: #FAEDD9;
-    background-color: #EA2A15;
-    font-family: "Everett-regular";
-    font-size: 16pt;
-    padding-top: 5px;
-}
 
-#textoFinal {
-    display: flex;
-    justify-content: space-around;
-}
 
 
 
@@ -427,8 +412,108 @@ video {
 }
 
 .ilustracion {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     background-color: #2A5C0B;
 
+}
+
+.quienesSomos {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.textQuienes {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+    font-size: 32pt;
+    color: #EA2A15;
+}
+
+.contactpics {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.ind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ind h3 {
+        font-family: "Averia Serif Libre", serif;
+            font-weight: 700;
+            font-size: 21pt;
+            color: #2A5C0B;
+            margin-top: -15px;
+}
+
+.pic svg {
+    width: 240px;
+    height: 300px;
+}
+
+
+
+.patrocinadores img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+
+
+.patrocinadoresBox {
+    height: 300px;
+    width: 100%;
+    background-color: #FAEDD9;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.patrocinadores {
+    display: flex;
+    align-items: center;
+
+    gap: 100px;
+    height: 300px;
+    animation: scrolling-left1 10s linear infinite;
+
+}
+
+@keyframes scrolling-left1 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+footer {
+    /* 
+    background-image: url("./assets/paisaje.png");
+    background-repeat: no-repeat;
+    background-position: bottom; 
+   */
+    height: 200px;
+    color: #FAEDD9;
+    background-color: #EA2A15;
+    font-family: "Everett-regular";
+    font-size: 16pt;
+    padding-top: 5px;
+}
+
+#textoFinal {
+    display: flex;
+    justify-content: space-around;
 }
