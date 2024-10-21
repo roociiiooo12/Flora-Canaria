@@ -107,10 +107,11 @@ h3 {
 #islas {
     scale: 0.7;
     margin: 0 auto;
-    translate: 5%;
     position: relative;
     margin-bottom: 80px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 #islas path {
