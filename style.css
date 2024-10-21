@@ -477,7 +477,7 @@ video {
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
-    height: 75vh;
+    height: 85vh;
 }
 
 .textQuienes {
@@ -515,39 +515,19 @@ video {
 }
 
 footer {
-    height: 25vh;
+padding-top: 50px;
+    height: 15vh;
     background-image:
         linear-gradient(120deg, #808F12, transparent, #EA2A15),
         linear-gradient(to top, #2A5C0B,#3b7e12, #f3a67a);
     font-family: "Everett-regular";
     font-size: 16pt;
-    padding: 15px;
-    color: antiquewhite
-}
-
-#textoFinal {
-    display: flex;
-    justify-content: space-around;
-}
-
-#accesibilidad div {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 30px;
-}
-#accesibilidad{
-    display: flex;
-    justify-content: center;
-    gap: 160px
-
+    color: antiquewhite;
 }
 
 #redesSociales {
     display: flex;
-    justify-content: space-around;
-   padding-top: 60px;
+    justify-content: space-evenly;
 }
 
 .img {
@@ -557,3 +537,12 @@ footer {
     flex-direction: row;
     padding: auto;
 }
+
+#redesSociales div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
