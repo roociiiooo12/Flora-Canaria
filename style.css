@@ -1,46 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: "Everett-regular";
+    src: url(assets/Everett-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Everett-medium";
+    src: url(assets/Everett-Medium.otf);
+}
+
 body {
     margin: 0;
     padding: 0;
+    background: linear-gradient(220deg, #fdfbf8, #f3a67a);
+    background-size: 600% 600%;
+
+    animation: AnimationBody 6s ease infinite;
 }
 
-header {
+@keyframes AnimationBody {
+    0% {
+        background-position: 0% 33%
+    }
+
+    50% {
+        background-position: 100% 68%
+    }
+
+    100% {
+        background-position: 0% 33%
+    }
+}
+
+#containerNav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 80px;
+    margin: 20px;
+    padding: 0px 30px;
+    background-color: #808F12;
+    border-radius: 50px;
+}
+
+header h1 {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 32pt;
+    line-height: 9pt;
+    color: #FAEDD9;
+    cursor: pointer;
 }
 
 nav {
     display: flex;
     gap: 40px;
+    justify-items: center;
 }
 
-#islas{
+#contact {
+    font-family: "Everett-regular";
+    text-transform: uppercase;
+    line-height: 2.5;
+    color: #FAEDD9;
+    cursor: pointer;
+}
+
+#contact:hover {
+    color: #2A5C0B;
+    font-family: "Everett-medium";
+}
+
+
+#donar {
+    font-family: "Everett-regular";
+    text-transform: uppercase;
+    width: 95px;
+    height: 38px;
+    border: none;
+    border-radius: 44px;
+    color: #FAEDD9;
+    background-color: #EA2A15;
+    cursor: pointer;
+}
+
+#donar:hover {
+    filter: drop-shadow(10px 5px 0 #FFFBF0);
+    transform: translate(-5px, -5px);
+    transition-duration: 0.03s;
+    transition-timing-function: ease-in-out;
+}
+
+#islas {
     scale: 0.7;
     margin: 0 auto;
     translate: 5%;
     position: relative;
+    margin-bottom: 80px;
 }
 
-#flores{
+#islas path {
+    fill: #2A5C0B;
+}
+
+
+.hoverin {
+    filter: drop-shadow(20px 10px 0 #EA2A15);
+    transform: translate(-10px, -10px);
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+#flores {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 150px;
 }
 
-.cajaflora{
- width: 200px;
- background-size: cover;
-}
-
-
-.cajaflora img{
+.cajaflora {
     width: 150px;
-    
+    background-size: cover;
+    display: flex;
+
+    justify-content: center;
+
+    background-color: white;
+    height: 150px;
+    border-radius: 200px;
+    cursor: pointer;
+
 }
+
+.cajaflora p {
+    position: absolute;
+    transform: translate(0px, 140px);
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 500;
+    font-size: 18pt;
+    color: #EA2A15;
+}
+
+.cajaflora img {
+    width: 80px;
+    object-fit: contain;
+}
+
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #EA2A15;
+    color: #FAEDD9;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#topButton:hover {
+    background-color: #FAEDD9;
+}
+#topButton:hover path {
+    fill: #EA2A15;
+}
+
 
 .ficha-izq {
     display: flex;
+    padding:
 }
 
 .ficha-der {
@@ -48,12 +181,39 @@ nav {
     flex-direction: row-reverse;
 }
 
+.contenido {
+    font-family: "Everett-regular";
+    font-size: 21pt;
+    color: #2A5C0B;
+    width: 50%;
+}
+
+.contenidoDentro {
+    max-width: 500px;
+    padding-left: 40px;
+}
+
 .titulo {
     display: flex;
+    align-content: center;
+
+    padding-top: 60px;
+
+}
+
+.titulo h2 {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 500;
+    font-size: 32pt;
+    color: #EA2A15;
+    margin-right: 20px;
+
 }
 
 .iluPeq {
-    width:80px
+    width: 80px;
+    object-fit: contain;
+    transform: rotate(15deg);
 }
 
 .foto {
@@ -61,23 +221,35 @@ nav {
     height: 100vh;
     background-color: blueviolet;
 }
-#islas path{
-    fill:aquamarine;
-}
 
 
-footer{
+
+
+footer {
+    /* 
     background-image: url("./assets/paisaje.png");
     background-repeat: no-repeat;
+    background-position: bottom; 
+   */
     height: 200px;
-    color: white;
-    background-position: bottom;
+    color: #FAEDD9;
+    background-color: #EA2A15;
+    font-family: "Everett-regular";
+    font-size: 16pt;
+    padding-top: 5px;
 }
 
+#textoFinal {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
 #miModal {
-    background-color: lightseagreen;
+    background-color: #808F12;
     width: 500px;
-    height: 500px;
+    height: 570px;
     position: absolute;
     top: 100px;
     margin-right: auto;
@@ -86,60 +258,134 @@ footer{
     right: 0;
     padding: 60px;
     padding-top: 20px;
+    font-family: "Everett-regular";
+    color: #FAEDD9;
+    border-radius: 30px;
+}
+
+#miModalBack {
+
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+
 }
 
 #modalCerrar {
     position: absolute;
     right: 30px;
     cursor: pointer;
+    color: #FAEDD9;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-
-#titulo {
-
-}
-
-#parrafo{
-
 }
 
 #miCajaForm {
     display: flex;
     flex-direction: column;
 
-    gap:7px;
+    gap: 7px;
 }
 
-#miCajaForm label {
- font-family: Arial, Helvetica, sans-serif;
-}
+#miCajaForm label {}
 
 #miCajaForm input {
- margin-bottom: 10px;
+    margin-bottom: 10px;
+    border: none;
+    height: 30px;
+    background-color: #FFFBF0;
 }
 
-#modalLabelCheck {
-    display: flex;
-    align-items: center;
+#modalDivCheck{
+    display: block;
+}
+
+#modalinputCheck {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+#modalLabelCheck{
+    position: relative;
+    cursor: pointer;
+}
+
+#modalLabelCheck:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: #FAEDD9;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+
+}
+
+#modalinputCheck:checked + #modalLabelCheck:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 6px;
+    height: 14px;
+    border: solid #808F12;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+
+}
+
+#miModal button {
+    font-family: "Everett-regular";
+    text-transform: uppercase;
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 44px;
+    color: #FAEDD9;
+    background-color: #EA2A15;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 50%;
+    translate: -50%;
+}
+
+#miModal button:hover {
+    box-shadow: 10px 5px 0 #FFFBF0;
+    transform: translate(-5px, -5px);
+    transition-duration: 0.03s;
+    transition-timing-function: ease-in-out;
 }
 
 
-.foto1, .foto2 {
-width: 50%;
-height: 100vh;
+
+
+.foto1,
+.foto2 {
+    width: 50%;
+    height: 100vh;
 }
 
 video {
     object-fit: cover;
     height: 100%;
     width: 100%;
+
 }
 
 .contenido {
     width: 50%;
 }
-
 
 #scrollToTopBtn {
     position: fixed;
@@ -152,5 +398,3 @@ video {
     border-radius: 50px;
     cursor: pointer;
 }
-
-
