@@ -130,6 +130,15 @@ Array.from(btn).forEach((img) => {
     })
 })
 
+// boton navbar quienes somos
+let btnQuienes = document.getElementById("contact");
+btnQuienes.addEventListener("click", QuienesFunction)
+function QuienesFunction() {
+    window.scrollTo({ top: 9000, behavior: "smooth" });
+    console.log("scrolii")
+}
+
+
 
 // boton navbar dona
 

@@ -15,7 +15,7 @@ body {
     padding: 0;
     background: linear-gradient(220deg, #fdfbf8, #f3a67a);
     background-size: 600% 600%;
-
+    overflow-x: hidden;
     animation: AnimationBody 6s ease infinite;
 }
 
@@ -94,12 +94,23 @@ nav {
     transition-timing-function: ease-in-out;
 }
 
+h3 {
+    font-family: "Everett-regular";
+        font-size: 21pt;
+        color: #2A5C0B;
+        font-weight: 200;
+        width:90%;
+        margin: 0 auto;
+        text-align: center;
+}
+
 #islas {
     scale: 0.7;
     margin: 0 auto;
     translate: 5%;
     position: relative;
     margin-bottom: 80px;
+    overflow: hidden;
 }
 
 #islas path {
@@ -173,7 +184,6 @@ nav {
 
 .ficha-izq {
     display: flex;
-
 }
 
 .ficha-der {
@@ -181,11 +191,38 @@ nav {
     flex-direction: row-reverse;
 }
 
+.lineaDecorder {
+    position: absolute;
+    width:1800px;
+    translate: 0 90px;
+    left: 20px;
+    background-color: #808F12;
+    height: 60px;
+    opacity: 1;
+    border-radius: 50px;
+}
+
+.lineaDecorizq {
+    position: absolute;
+    width: 1800px;
+    translate: 0 90px;
+    right: 20px;
+    background-color: #808F12;
+    height: 60px;
+    opacity: 1;
+    border-radius: 50px;
+}
+
 .contenido {
     font-family: "Everett-regular";
     font-size: 21pt;
     color: #2A5C0B;
     width: 50%;
+}
+
+h5 {
+    margin-bottom: -20px;
+    font-size: 15pt;
 }
 
 .contenidoDentro {
@@ -196,17 +233,17 @@ nav {
 .titulo {
     display: flex;
     align-content: center;
-
     padding-top: 60px;
-
+    
 }
 
 .titulo h2 {
     font-family: "Averia Serif Libre", serif;
     font-weight: 500;
     font-size: 32pt;
-    color: #EA2A15;
+    color: #FAEDD9;
     margin-right: 20px;
+    z-index: 1;
 
 }
 
@@ -221,12 +258,6 @@ nav {
     height: 100vh;
     background-color: blueviolet;
 }
-
-
-
-
-
-
 
 
 #miModal {
@@ -331,6 +362,7 @@ nav {
 #miModal button {
     font-family: "Everett-regular";
     text-transform: uppercase;
+    font-size: 18pt;
     width: 150px;
     height: 38px;
     border: none;
@@ -349,9 +381,6 @@ nav {
     transition-duration: 0.03s;
     transition-timing-function: ease-in-out;
 }
-
-
-
 
 .foto1,
 .foto2 {
@@ -390,70 +419,19 @@ video {
     fill: #EA2A15;
 }
 
-#quienesSomos {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 200px;
-    padding-bottom: 200px;
 
-}
 
 .persona {
     display: flex;
     align-items: flex-end;
     flex-direction: column-reverse;
-
 }
 
 .ilustracion {
     width: 60px;
     height: 60px;
     background-color: #2A5C0B;
-
 }
-
-.quienesSomos {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 30px;
-}
-.textQuienes {
-    font-family: "Averia Serif Libre", serif;
-    font-weight: 700;
-    font-size: 32pt;
-    color: #EA2A15;
-}
-
-.contactpics {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: 100px;
-}
-
-.ind {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ind h3 {
-        font-family: "Averia Serif Libre", serif;
-            font-weight: 700;
-            font-size: 21pt;
-            color: #2A5C0B;
-            margin-top: -15px;
-}
-
-.pic svg {
-    width: 240px;
-    height: 300px;
-}
-
-
 
 .patrocinadores img {
     width: 200px;
@@ -461,16 +439,12 @@ video {
     object-fit: contain;
 }
 
-
-
-
 .patrocinadoresBox {
     height: 300px;
     width: 100%;
     background-color: #FAEDD9;
     display: inline-block;
     overflow: hidden;
-
 }
 
 .patrocinadores {
@@ -493,13 +467,53 @@ video {
     }
 }
 
+
+
+.quienesSomos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    height: 70vh;
+}
+
+.textQuienes {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+    font-size: 36pt;
+    color: #EA2A15;
+}
+
+.contactpics {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.ind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ind h3 {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+    font-size: 21pt;
+    color: #2A5C0B;
+    margin-top: -15px;
+}
+
+.pic svg {
+    width: 240px;
+    height: 300px;
+}
+
 footer {
-    /* 
-    background-image: url("./assets/paisaje.png");
-    background-repeat: no-repeat;
-    background-position: bottom; 
-   */
-    height: 200px;
+    height: 30vh;
     color: #FAEDD9;
     background-color: #EA2A15;
     font-family: "Everett-regular";
