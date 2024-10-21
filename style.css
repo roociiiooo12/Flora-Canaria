@@ -123,7 +123,7 @@ nav {
     width: 150px;
     background-size: cover;
     display: flex;
-
+  
     justify-content: center;
 
     background-color: white;
@@ -145,6 +145,17 @@ nav {
 .cajaflora img {
     width: 80px;
     object-fit: contain;
+}  
+
+.cajaflora:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+.cajaflora:hover ~ .cajaflora, 
+.cajaflora:hover ~ .cajaflora {
+    opacity: 0.5;
 }
 
 #topButton {
@@ -161,13 +172,6 @@ nav {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-}
-
-#topButton:hover {
-    background-color: #FAEDD9;
-}
-#topButton:hover path {
-    fill: #EA2A15;
 }
 
 
@@ -298,7 +302,7 @@ footer {
     background-color: #FFFBF0;
 }
 
-#modalDivCheck{
+#modalDivCheck {
     display: block;
 }
 
@@ -311,7 +315,7 @@ footer {
     cursor: pointer;
 }
 
-#modalLabelCheck{
+#modalLabelCheck {
     position: relative;
     cursor: pointer;
 }
@@ -331,7 +335,7 @@ footer {
 
 }
 
-#modalinputCheck:checked + #modalLabelCheck:after {
+#modalinputCheck:checked+#modalLabelCheck:after {
     content: '';
     display: block;
     position: absolute;
@@ -389,12 +393,42 @@ video {
 
 #scrollToTopBtn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: blue;
+    bottom: 25px;
+    right: 25px;
+    background-color: #EA2A15;
     color: white;
     border: none;
     padding: 10px;
     border-radius: 50px;
     cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #FAEDD9;
+}
+
+#scrollToTopBtn:hover path {
+    fill: #EA2A15;
+}
+
+#quienesSomos {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+}
+
+.persona {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+
+}
+
+.ilustracion {
+    width: 100px;
+    height: 100px;
+    background-color: #2A5C0B;
+
 }

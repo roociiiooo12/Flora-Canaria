@@ -126,7 +126,6 @@ let vistaActual = null
 
 Array.from(btn).forEach((img) => {
     img.addEventListener("click", () => {
-        console.log("click")
         vistaActual = fichaMap[img.id].scrollIntoView({ behavior: "smooth" })
     })
 })
@@ -321,4 +320,32 @@ scrollToTopBtn.onclick = function () {
 };
 
 
+
+
+let cajaFlora = document.querySelectorAll(".cajaFlora");
+
+cajaFlora.forEach(cajaFlora=> {
+    cajaFlora.addEventListener("mouseenter", () => {
+        cajaFlora.forEach(el => {
+            el.style.opacity = "1"; 
+            el.style.transform = "scale(1.5)"; 
+        });
+    });
+});
+
+cajaFlora.forEach(el => {
+    if (el !== cajaFlora) {
+        el.style.opacity = "0.3";
+        el.style.transform = "scale(0.95)"; 
+    }
+});
+ 
+
+
+cajaFlora.addEventListener("mouseleave", () => {
+    cajaFlora.forEach(el => {
+        el.style.opacity = "0.5"; 
+        el.style.transform = "scale(1)"; 
+    });
+});
 
