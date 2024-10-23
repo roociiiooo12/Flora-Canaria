@@ -118,7 +118,6 @@ h3 {
     fill: #2A5C0B;
 }
 
-
 .hoverin {
     filter: drop-shadow(20px 10px 0 #EA2A15);
     transform: translate(-10px, -10px);
@@ -213,8 +212,6 @@ h3 {
     opacity: 1;
     border-radius: 50px;
 }
-
-
 
 .contenido {
     font-family: "Everett-regular";
@@ -469,8 +466,6 @@ video {
         transform: translateX(-100%);
     }
 }
-
-
 
 .quienesSomos {
     display: flex;
